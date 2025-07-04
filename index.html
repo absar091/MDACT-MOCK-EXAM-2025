@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDCAT 2025 Mock Exam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        #app {
+            flex-grow: 1;
+        }
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        .btn {
+            display: inline-block;
+            font-weight: 600;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            user-select: none;
+            border: 1px solid transparent;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 8px;
+            transition: all 0.2s ease-in-out;
+        }
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .btn-primary {
+            color: #fff;
+            background-color: #2563eb;
+            border-color: #2563eb;
+        }
+        .btn-primary:hover:not(:disabled) {
+            background-color: #1d4ed8;
+            border-color: #1d4ed8;
+        }
+        .option-label {
+            display: block;
+            padding: 1rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .option-label:hover {
+            border-color: #93c5fd;
+        }
+        input[type="radio"]:checked + .q-option {
+            border-color: #2563eb;
+            background-color: #dbeafe;
+        }
+        .correct {
+            border-color: #16a34a !important;
+            background-color: #dcfce7 !important;
+        }
+        .incorrect {
+            border-color: #dc2626 !important;
+            background-color: #fee2e2 !important;
+        }
+        .progress-bar-bg {
+            background-color: #e5e7eb;
+            border-radius: 9999px;
+            overflow: hidden;
+        }
+        .progress-bar-fg {
+            background-color: #2563eb;
+            height: 100%;
+            transition: width 0.3s ease;
+        }
+        /* Question Palette Styles */
+        .palette-btn {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+        .palette-not-visited { background-color: #e5e7eb; color: #4b5563; }
+        .palette-answered { background-color: #16a34a; color: white; }
+        .palette-skipped { background-color: #f59e0b; color: white; }
+        .palette-current { border: 2px solid #2563eb; }
+        .mark-for-review-dot {
+            position: absolute;
+            bottom: 4px;
+            right: 4px;
+            width: 8px;
+            height: 8px;
+            background-color: #8b5cf6;
+            border-radius: 50%;
+            border: 1px solid white;
+        }
+        /* Custom Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 50;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+    <!-- ...existing code... -->
+</body>
+</html>
